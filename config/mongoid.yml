@@ -1,0 +1,16 @@
+development:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+
+production:
+  sessions:
+    default:
+      uri: <%= ENV['MONGOHQ_URL'] %>
+
+test:
+  sessions:
+    default:
+      database: jetsam-test
+      hosts:
+        - localhost:27017
